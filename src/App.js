@@ -4,14 +4,14 @@ import './App.css';
 import PublicRoute from '@/pages/Public/PublicRoute';
 
 function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <PublicRoute />
-        <image></image>
-      </BrowserRouter>
-    </div>
-  );
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <PublicRoute />
+                <image></image>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
