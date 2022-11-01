@@ -1,26 +1,23 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Layout from './Layout';
-import Home from './Home';
-import Service from './Service';
-import Contact from './Contact';
+import { Layout, Home, Service, Contact } from '../Public';
 import Error from '../../../src/_utils/Error';
 
-const PublicRoute = () => {
+const PublicRouter = () => {
     return (
         <Routes>
             <Route element={<Layout />}>
                 <Route index element={<Home />} />
 
-                <Route path='/home' element={<Home />} />
-                <Route path='/service' element={<Service />} />
-                <Route path='/contact' element={<Contact />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/service" element={<Service />} />
+                <Route path="/contact" element={<Contact />} />
 
-                <Route path='*' element={<Error />} />
+                <Route path="*" element={<Error />} />
             </Route>
         </Routes>
     );
 };
 
-export default PublicRoute;
+export default PublicRouter;
