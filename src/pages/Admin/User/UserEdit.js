@@ -1,7 +1,11 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 const UserEdit = () => {
-    return <div className="UserEdit">Page EDIT</div>;
+    let { uid } = useParams();
+    console.log(uid);
+
+    return <div className="UserEdit"> Page EDIT</div>;
 };
 
 export default UserEdit;
